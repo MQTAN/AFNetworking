@@ -90,7 +90,10 @@
 
  @warning Managers for background sessions must be owned for the duration of their use. This can be accomplished by creating an application-wide or shared singleton instance.
  */
-
+/**
+ *  http://mobile.51cto.com/iphone-483311.htm
+ *  中有关于NS_ASSUME_NONNULL_BEGIN的讲解. 主要是针对一些普通的对象写__nullable和__nonnull
+ */
 NS_ASSUME_NONNULL_BEGIN
 
 #if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000) || (defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && __MAC_OS_X_VERSION_MAX_ALLOWED >= 1090) || TARGET_OS_WATCH
